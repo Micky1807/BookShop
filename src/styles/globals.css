@@ -65,9 +65,36 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
-  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: bold;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #8b8b8b;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
 
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6c6e6e;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .cart-icon{
   font-size: 25px;
