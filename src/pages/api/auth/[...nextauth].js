@@ -9,6 +9,6 @@ export const authOptions = {
     }),
 
   ],
-
+  secret: 'IamHere'
 }
 export default NextAuth(authOptions)
