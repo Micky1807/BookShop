@@ -16,7 +16,7 @@ const Navbar = () => {
       </p>
       <div onClick={!session ? signIn : signOut} className="hover-underline-animation">
         <p className='sign'>
-          {session ? `Hello, ${session.user.email}` : "Sign In"}
+          {session ? `Hello, ${session.user.name}` : "Sign In"}
         </p>
       </div>
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
