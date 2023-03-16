@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <p className="logo">
-        <Link href="/">E-Book Shop</Link>
+        <Link href="/">Book Shop</Link>
       </p>
       <div onClick={!session ? signIn : signOut} className="hover-underline-animation">
         <p className='sign'>
